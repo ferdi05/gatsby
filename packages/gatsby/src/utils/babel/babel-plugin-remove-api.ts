@@ -1,6 +1,7 @@
 import { declare } from "@babel/helper-plugin-utils"
 import * as t from "@babel/types"
-import type { PluginObj, ConfigAPI } from "@babel/core"
+import { PluginObj, ConfigAPI } from "@babel/core"
+import { RemoveNamedExportPropertiesVisitor } from "./babel-module-export-utils"
 
 export default declare(function removeApiCalls(
   api: ConfigAPI,
@@ -94,48 +95,15 @@ export default declare(function removeApiCalls(
         },
       },
 
+      // TODO - Add named export function, variable and specifier visitors
       // Remove export statements
-      ExportNamedDeclaration(path, state): void {
-        const declaration = path.node.declaration
-
-        if (t.isExportNamedDeclaration(path.node)) {
-          const specifiersToKeep: Array<
-            | t.ExportDefaultSpecifier
-            | t.ExportNamespaceSpecifier
-            | t.ExportSpecifier
-          > = []
-          path.node.specifiers.forEach(specifier => {
-            if (
-              t.isExportSpecifier(specifier) &&
-              t.isIdentifier(specifier.exported) &&
-              apisToRemove.includes(specifier.exported.name)
-            ) {
-              path.scope.bindings[specifier.local.name].path.remove()
-            } else {
-              specifiersToKeep.push(specifier)
-            }
-          })
-
-          path.node.specifiers = specifiersToKeep
-        }
-
-        let apiToCheck
-        if (t.isFunctionDeclaration(declaration) && declaration.id) {
-          apiToCheck = declaration.id.name
-        }
-        if (
-          t.isVariableDeclaration(declaration) &&
-          t.isIdentifier(declaration.declarations[0].id)
-        ) {
-          apiToCheck = declaration.declarations[0].id.name
-        }
-
-        if (apiToCheck && apisToRemove.includes(apiToCheck)) {
-          state.apiRemoved = true
-          path.remove()
-        }
+      ExportNamedDeclaration(path): void {
+        path.traverse(RemoveNamedExportPropertiesVisitor, {
+          propertiesToRemove: apisToRemove,
+        })
       },
 
+      // TODO - Check if this is for CommonJS or something else
       // remove exports
       ExpressionStatement(path, state): void {
         if (
@@ -148,6 +116,7 @@ export default declare(function removeApiCalls(
 
         const apiToCheck = (path.node.expression.left.property as t.Identifier)
           .name
+
         if (apiToCheck && apisToRemove.includes(apiToCheck)) {
           state.apiRemoved = true
           path.remove()
