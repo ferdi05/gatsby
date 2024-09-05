@@ -13,10 +13,10 @@
     "@turist/time": "^0.0.2",
     "async-retry-ng": "^2.0.1",
     "boxen": "^4.2.0",
-    "configstore": "^5.0.1",
+    "configstore": "^6.0.0",
     "fs-extra": "^10.0.0",
     "gatsby-core-utils": "^3.6.0-next.1",
-    "git-up": "^4.0.5",
+    "git-up": "^6.0.0",
     "is-docker": "^2.2.1",
     "lodash": "^4.17.21",
     "node-fetch": "^2.6.6"
