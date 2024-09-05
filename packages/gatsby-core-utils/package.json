@@ -31,10 +31,10 @@
   "dependencies": {
     "@babel/runtime": "^7.15.4",
     "ci-info": "2.0.0",
-    "configstore": "^5.0.1",
+    "configstore": "^6.0.0",
     "file-type": "^16.5.3",
     "fs-extra": "^10.0.0",
-    "got": "^11.8.3",
+    "got": "^12.6.0",
     "lock": "^1.1.0",
     "node-object-hash": "^2.3.10",
     "proper-lockfile": "^4.1.2",
