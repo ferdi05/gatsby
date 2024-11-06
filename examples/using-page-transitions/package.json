@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Steven Surgnier <stevensurgnier@gmail.com>",
   "dependencies": {
-    "gatsby": "next",
+    "gatsby": "5.14.0",
     "gatsby-plugin-layout": "next",
     "gatsby-plugin-react-helmet": "next",
     "react": "^16.9.0",
