@@ -5,7 +5,7 @@
   "author": "scott.eckenthal@gmail.com",
   "dependencies": {
     "app-root-dir": "^1.0.2",
-    "gatsby": "next",
+    "gatsby": "5.14.0",
     "gatsby-source-filesystem": "next",
     "gatsby-transformer-react-docgen": "next",
     "gatsby-transformer-remark": "next",
