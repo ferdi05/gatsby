@@ -12,7 +12,7 @@
     "gatsby-plugin-react-helmet": "next",
     "gatsby-plugin-sharp": "next",
     "gatsby-plugin-typography": "next",
-    "gatsby-source-wordpress": "next",
+    "gatsby-source-wordpress": "7.14.0",
     "gatsby-transformer-sharp": "next",
     "glamor": "^2.20.40",
     "lodash": "^4.17.20",
