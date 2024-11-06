@@ -27,7 +27,7 @@
     "start-server-and-test": "^1.11.3"
   },
   "dependencies": {
-    "gatsby": "next",
+    "gatsby": "5.14.0",
     "gatsby-plugin-gatsby-cloud": "next",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
