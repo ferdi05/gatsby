@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "next",
+    "gatsby": "5.14.0",
     "gatsby-plugin-manifest": "next",
     "gatsby-plugin-perf-budgets": "0.0.17",
     "gatsby-plugin-react-helmet": "next",
