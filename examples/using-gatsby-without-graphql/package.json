@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "axios": "^0.20.0",
-    "gatsby": "next",
+    "gatsby": "5.14.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
