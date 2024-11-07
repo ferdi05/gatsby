@@ -12,10 +12,10 @@
   "author": "Tyler Barnes <tylerdbarnes@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "gatsby": "next",
+    "gatsby": "5.14.0",
     "gatsby-plugin-sharp": "next",
     "gatsby-source-filesystem": "next",
-    "gatsby-source-wordpress": "next",
+    "gatsby-source-wordpress": "7.14.0",
     "gatsby-transformer-sharp": "next",
     "gatsby-plugin-image": "next",
     "react": "^17.0.2",
