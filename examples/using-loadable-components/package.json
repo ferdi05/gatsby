@@ -5,7 +5,7 @@
   "author": "Grayson Hicks <graysonhicks@gmail.com>",
   "dependencies": {
     "@loadable/component": "^5.15.0",
-    "gatsby": "next",
+    "gatsby": "5.14.0",
     "gatsby-plugin-gatsby-cloud": "next",
     "gatsby-plugin-image": "next",
     "gatsby-plugin-loadable-components-ssr": "3.0.0",
