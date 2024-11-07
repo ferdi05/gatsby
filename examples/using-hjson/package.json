@@ -5,7 +5,7 @@
   "author": "Remi Barraquand <dev@remibarraquand.com>",
   "dependencies": {
     "core-js": "^2.6.11",
-    "gatsby": "next",
+    "gatsby": "5.14.0",
     "gatsby-source-filesystem": "next",
     "gatsby-transformer-hjson": "next",
     "react": "^16.9.0",
