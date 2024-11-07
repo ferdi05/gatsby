@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "Vladimir Guguiev <wizardzloy@gmail.com>",
   "dependencies": {
-    "gatsby": "next",
+    "gatsby": "5.14.0",
     "gatsby-plugin-flow": "next",
     "gatsby-plugin-jss": "next",
     "react": "^16.9.0",
