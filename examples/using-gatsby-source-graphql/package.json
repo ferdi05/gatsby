@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "dateformat": "^3.0.3",
-    "gatsby": "next",
+    "gatsby": "5.14.0",
     "gatsby-image": "next",
     "gatsby-plugin-netlify": "next",
     "gatsby-plugin-sharp": "next",
