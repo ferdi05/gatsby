@@ -7,7 +7,7 @@
   "dependencies": {
     "del-cli": "^3.0.0",
     "faker": "^4.1.0",
-    "gatsby": "^2.19.5",
+    "gatsby": "^4.22.0",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-benchmark-reporting": "*",
     "gatsby-plugin-feed": "^2.3.26",
@@ -30,7 +30,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
-    "ts-node": "^8.9.0",
+    "ts-node": "^10.2.0",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
     "typescript": "^3.8.3",
