@@ -15,7 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "airtable": "^0.10.1",
+    "airtable": "^0.11.6",
     "gatsby": "next",
     "gatsby-plugin-gatsby-cloud": "next",
     "react": "^17.0.1",
