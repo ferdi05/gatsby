@@ -15,7 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "babel-preset-gatsby": "^1.5.0",
+    "babel-preset-gatsby": "^3.10.0",
     "gatsby": "next",
     "gatsby-plugin-gatsby-cloud": "next",
     "gatsby-plugin-sass": "next",
